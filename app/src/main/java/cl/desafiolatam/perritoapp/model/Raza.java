@@ -1,10 +1,11 @@
 package cl.desafiolatam.perritoapp.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Raza {
     private String status;
-    private ArrayList<SubRaza> message;
+    private List<SubRaza> message;
 
     public String getStatus() {
         return status;
@@ -14,15 +15,15 @@ public class Raza {
         this.status = status;
     }
 
-    public ArrayList<SubRaza> getMessage() {
+    public List<SubRaza> getMessage() {
         return message;
     }
 
-    public void setMessage(ArrayList<SubRaza> message) {
+    public void setMessage(List<SubRaza> message) {
         this.message = message;
     }
 
-    public Raza(String status, ArrayList<SubRaza> message) {
+    public Raza(String status, List<SubRaza> message) {
         this.status = status;
         this.message = message;
 
