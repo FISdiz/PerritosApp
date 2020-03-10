@@ -1,18 +1,10 @@
 package cl.desafiolatam.perritoapp.model;
 
-
-import java.util.List;
-import java.util.Map;
+import java.util.ArrayList;
 
 public class Raza {
     private String status;
-    private Map<String, List<String>> message;
-
-    public Raza(String status, Map<String, List<String>> message) {
-        this.status = status;
-        this.message = message;
-
-    }
+    private ArrayList<SubRaza> message;
 
     public String getStatus() {
         return status;
@@ -22,11 +14,17 @@ public class Raza {
         this.status = status;
     }
 
-    public Map<String, List<String>> getMessage() {
+    public ArrayList<SubRaza> getMessage() {
         return message;
     }
 
-    public void setMessage(Map<String, List<String>> message) {
+    public void setMessage(ArrayList<SubRaza> message) {
         this.message = message;
+    }
+
+    public Raza(String status, ArrayList<SubRaza> message) {
+        this.status = status;
+        this.message = message;
+
     }
 }
