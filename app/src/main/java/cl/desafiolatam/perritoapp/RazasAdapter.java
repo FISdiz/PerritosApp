@@ -1,6 +1,7 @@
 package cl.desafiolatam.perritoapp;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 
@@ -24,6 +25,22 @@ public class RazasAdapter extends RecyclerView.Adapter<RazasAdapter.MyViewHolder
     }
 
 
+    @NonNull
+    @Override
+    public RazasAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View mRecipeView;
+        mRecipeView = mLayoutInflater.inflate(R.layout.razas_layout, parent, false);
+        return new MyViewHolder(mRecipeView);
+    }
 
+    @Override
+    public void onBindViewHolder(@NonNull RazasAdapter.MyViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
 }
 
