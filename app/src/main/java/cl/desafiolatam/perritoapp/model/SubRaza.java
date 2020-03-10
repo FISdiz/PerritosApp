@@ -1,16 +1,18 @@
 package cl.desafiolatam.perritoapp.model;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 class SubRaza {
-    private ArrayList<String> subRaza;
+    private Map<String, List> subRaza;
     private String raza;
 
-    public ArrayList<String> getSubRaza() {
+    public Map<String, List> getSubRaza() {
         return subRaza;
     }
 
-    public void setSubRaza(ArrayList<String> subRaza) {
+    public void setSubRaza(Map<String, List> subRaza) {
         this.subRaza = subRaza;
     }
 
@@ -22,7 +24,7 @@ class SubRaza {
         this.raza = raza;
     }
 
-    public SubRaza(ArrayList<String> subRaza, String raza) {
+    public SubRaza(Map<String, List> subRaza, String raza) {
         this.subRaza = subRaza;
         this.raza = raza;
 
