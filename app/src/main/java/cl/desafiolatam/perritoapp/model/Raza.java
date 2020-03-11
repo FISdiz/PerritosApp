@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Raza {
     private String status;
-    private ArrayList<SubRaza> message;
+    private ArrayList<String> message;
 
     public String getStatus() {
         return status;
@@ -14,15 +14,15 @@ public class Raza {
         this.status = status;
     }
 
-    public ArrayList<SubRaza> getMessage() {
+    public ArrayList<String> getMessage() {
         return message;
     }
 
-    public void setMessage(ArrayList<SubRaza> message) {
+    public void setMessage(ArrayList<String> message) {
         this.message = message;
     }
 
-    public Raza(String status, ArrayList<SubRaza> message) {
+    public Raza(String status, ArrayList<String> message) {
         this.status = status;
         this.message = message;
 
